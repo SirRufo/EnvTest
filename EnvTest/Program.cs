@@ -36,7 +36,18 @@ namespace EnvTest
 
             path = Path.GetTempPath();
             Console.WriteLine( path );
+            Console.WriteLine();
+
+            Console.WriteLine( "FileDataStore:" );
+            Console.WriteLine();
+
+
+            var ds = new FileDataStore( "EnvTest" );
+
+            Console.WriteLine( "FolderPath = {0}", ds.FolderPath );
         }
+
+
     }
 
     public static class EnumHelper
@@ -51,4 +62,5 @@ namespace EnvTest
             return Enum.GetValues( typeof( TEnum ) ).Cast<TEnum>().ToArray();
         }
     }
+
 }
