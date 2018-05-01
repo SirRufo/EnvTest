@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 
 namespace EnvTest
@@ -29,6 +30,12 @@ namespace EnvTest
                 Console.WriteLine( "{0}: {1}", key, envvalues[key] );
             }
             Console.WriteLine();
+
+            Console.WriteLine( "Temporary Path:" );
+            Console.WriteLine();
+
+            path = Path.GetTempPath();
+            Console.WriteLine( path );
         }
     }
 
