@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   envtest:
-    image: ${DOCKER_REGISTRY}envtest
+    image: envtest
     build:
       context: .
       dockerfile: EnvTest/EnvTest.dockerfile
